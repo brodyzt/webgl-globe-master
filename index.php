@@ -1,1 +1,1 @@
-<?php header( 'Location: /meteor-globe/index.html' ) ;  ?>
+<?php header( 'Location: /globe-simple/index.html' ) ;  ?>

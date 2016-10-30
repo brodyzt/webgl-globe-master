@@ -28,7 +28,7 @@
                 if(xhr.readyState === 4 && xhr.status === 200) {
                     var data = JSON.parse(xhr.responseText);
                     var points = [];
-/*
+
                     var maxValue = 0;
                     for(var i = 0; i < 1000; i++) {
                         points.push(data[1][i][9][1]);
@@ -43,10 +43,12 @@
                         points[i] = points[i] / maxValue;
                     }
 
-*/                  for(var i = 0; i < data.length; i++) {
+
+/*
+                    for(var i = 0; i < data.length; i++) {
                         globe.addData(data[i][1], {format: 'magnitude'})
                     }
-
+*/
                     globe.createPoints();
 
                     globe.animate();
